@@ -1,0 +1,3 @@
+[submodule "couchbase-lite-ios"]
+	path = couchbase-lite-ios
+	url = https://github.com/RVijay007/couchbase-lite-ios.git
