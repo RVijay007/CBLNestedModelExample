@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0307B17F18FC1D4300B69621 /* SyncGatewayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0307B17E18FC1D4300B69621 /* SyncGatewayModel.m */; };
 		0377B4EB18FB8447005C04C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B4EA18FB8447005C04C9 /* Cocoa.framework */; };
 		0377B4F518FB8447005C04C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0377B4F318FB8447005C04C9 /* InfoPlist.strings */; };
 		0377B4F718FB8447005C04C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B4F618FB8447005C04C9 /* main.m */; };
@@ -118,6 +119,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0307B17D18FC1D4300B69621 /* SyncGatewayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayModel.h; sourceTree = "<group>"; };
+		0307B17E18FC1D4300B69621 /* SyncGatewayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayModel.m; sourceTree = "<group>"; };
 		0377B4E718FB8447005C04C9 /* CBLNestedModelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLNestedModelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0377B4EA18FB8447005C04C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0377B4ED18FB8447005C04C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -166,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0307B16818FBB87B00B69621 /* CBLNestedModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				0307B17D18FC1D4300B69621 /* SyncGatewayModel.h */,
+				0307B17E18FC1D4300B69621 /* SyncGatewayModel.m */,
+			);
+			path = CBLNestedModelTests;
+			sourceTree = "<group>";
+		};
 		0377B4DE18FB8447005C04C9 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				0377B52318FB98A0005C04C9 /* CBLJSONEncodingTests */,
+				0307B16818FBB87B00B69621 /* CBLNestedModelTests */,
 				0377B4FC18FB8447005C04C9 /* AppDelegate.h */,
 				0377B4FD18FB8447005C04C9 /* AppDelegate.m */,
 				0377B4FF18FB8447005C04C9 /* MainMenu.xib */,
@@ -472,6 +485,7 @@
 			files = (
 				0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */,
 				0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */,
+				0307B17F18FC1D4300B69621 /* SyncGatewayModel.m in Sources */,
 				0377B4FE18FB8447005C04C9 /* AppDelegate.m in Sources */,
 				0377B4F718FB8447005C04C9 /* main.m in Sources */,
 			);

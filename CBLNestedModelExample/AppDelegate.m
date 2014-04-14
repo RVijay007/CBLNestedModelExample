@@ -10,6 +10,7 @@
 #import <CouchbaseLite/CouchbaseLite.h>
 #import "MyCBLModel.h"
 #import "MyCBLChildModel.h"
+#import "SyncGatewayModel.h"
 
 typedef void(^PrintError)(NSError*, NSString*);
 
@@ -27,7 +28,8 @@ typedef void(^PrintError)(NSError*, NSString*);
         }
     };
     
-    [self jsonEncodingTest];
+    // [self jsonEncodingTest];
+    [self nestedModelTest];
 }
 
 /**
@@ -86,6 +88,54 @@ typedef void(^PrintError)(NSError*, NSString*);
     childModel.name = @"Jane Doe";
     childModel.onMutate();
     [parentModel save:&error];
+}
+
+- (void)nestedModelTest {
+    // Create Database
+    NSError* error;
+    CBLDatabase* database = [[CBLManager sharedInstance] databaseNamed:@"nestedmodeltest" error:&error];
+    if(!database) {
+        NSAssert(NO, @"Error creating db: %@", error);
+    }
+    
+    // Create a sync gateway model
+    SyncGatewayModel* syncGateway = [[SyncGatewayModel alloc] initWithNewDocumentInDatabase:database];
+    syncGateway.interface = @":4984";
+    syncGateway.adminInterface = @"127.0.0.1:4985";
+    syncGateway.log = @[@"CRUD", @"CRUD+", @"HTTP", @"HTTP+", @"Access", @"Cache", @"Shadow", @"Shadow+", @"Changes", @"Changes+"];
+    [syncGateway save:&error];
+    self.printError(error, @"saving basic sync gateway");
+    
+    // Create database
+    SyncGatewayDatabase* syncDatabase = [[SyncGatewayDatabase alloc] init];
+    syncGateway.databases = @{@"my-sync-db" : syncDatabase};
+    
+    syncDatabase.server = @"http://localhost:8091";
+    syncDatabase.bucket = @"my-remote-bucket";
+    syncDatabase.sync = @"function(doc) {channel(doc.channels);}";
+    [syncGateway save:&error];
+    self.printError(error, @"saving db info to sync gateway");
+    
+    // Add user info
+    SyncGatewayUserInfo* userInfo = [[SyncGatewayUserInfo alloc] init];
+    userInfo.disabled = true;
+    userInfo.admin_channels = @[@"public"];
+    
+    NSDictionary* databases = syncGateway.databases;
+    syncDatabase = databases[@"my-sync-db"];    // We must get the database again because the save invalidated the old database
+    syncDatabase.users = @{@"GUEST" : userInfo};
+    [userInfo setParent:syncDatabase];                      // UserInfo can now mutate and notify parent CBLModel
+    [syncDatabase modified];                                // We changed syncDatabase
+    [syncGateway save:&error];
+    self.printError(error, @"saving userinfo to sync gateway");
+    
+    // Change user info to illustrate propagation of modification
+    
+    userInfo = [syncGateway.databases[@"my-sync-db"] users][@"GUEST"];
+    userInfo.disabled = false;                              // Changed userInfo as an example
+    [userInfo modified];                                    // We can just call modified on userInfo and it will notify the proper CBLModel
+    [syncGateway save:&error];
+    self.printError(error, @"saving modified userinfo to sync gateway");
 }
 
 @end
