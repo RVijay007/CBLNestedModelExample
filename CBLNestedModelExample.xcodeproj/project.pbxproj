@@ -18,8 +18,6 @@
 		0377B50B18FB8447005C04C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B4EA18FB8447005C04C9 /* Cocoa.framework */; };
 		0377B51318FB8447005C04C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0377B51118FB8447005C04C9 /* InfoPlist.strings */; };
 		0377B51518FB8447005C04C9 /* CBLNestedModelExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B51418FB8447005C04C9 /* CBLNestedModelExampleTests.m */; };
-		0377B52818FB98A0005C04C9 /* CBLNestedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52018FB98A0005C04C9 /* CBLNestedModel.m */; };
-		0377B52918FB98A0005C04C9 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52218FB98A0005C04C9 /* NSObject+Properties.m */; };
 		0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */; };
 		0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52718FB98A0005C04C9 /* MyCBLModel.m */; };
 		0377B5AB18FB9CAC005C04C9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B59418FB9B6D005C04C9 /* CouchbaseLite.framework */; };
@@ -139,10 +137,6 @@
 		0377B51018FB8447005C04C9 /* CBLNestedModelExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBLNestedModelExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0377B51218FB8447005C04C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0377B51418FB8447005C04C9 /* CBLNestedModelExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLNestedModelExampleTests.m; sourceTree = "<group>"; };
-		0377B51F18FB98A0005C04C9 /* CBLNestedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLNestedModel.h; sourceTree = "<group>"; };
-		0377B52018FB98A0005C04C9 /* CBLNestedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLNestedModel.m; sourceTree = "<group>"; };
-		0377B52118FB98A0005C04C9 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
-		0377B52218FB98A0005C04C9 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
 		0377B52418FB98A0005C04C9 /* MyCBLChildModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCBLChildModel.h; sourceTree = "<group>"; };
 		0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCBLChildModel.m; sourceTree = "<group>"; };
 		0377B52618FB98A0005C04C9 /* MyCBLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCBLModel.h; sourceTree = "<group>"; };
@@ -215,7 +209,6 @@
 		0377B4F018FB8447005C04C9 /* CBLNestedModelExample */ = {
 			isa = PBXGroup;
 			children = (
-				0377B51E18FB98A0005C04C9 /* API */,
 				0377B52318FB98A0005C04C9 /* CBLJSONEncodingTests */,
 				0377B4FC18FB8447005C04C9 /* AppDelegate.h */,
 				0377B4FD18FB8447005C04C9 /* AppDelegate.m */,
@@ -254,17 +247,6 @@
 				0377B51118FB8447005C04C9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0377B51E18FB98A0005C04C9 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				0377B51F18FB98A0005C04C9 /* CBLNestedModel.h */,
-				0377B52018FB98A0005C04C9 /* CBLNestedModel.m */,
-				0377B52118FB98A0005C04C9 /* NSObject+Properties.h */,
-				0377B52218FB98A0005C04C9 /* NSObject+Properties.m */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		0377B52318FB98A0005C04C9 /* CBLJSONEncodingTests */ = {
@@ -488,10 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0377B52918FB98A0005C04C9 /* NSObject+Properties.m in Sources */,
 				0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */,
 				0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */,
-				0377B52818FB98A0005C04C9 /* CBLNestedModel.m in Sources */,
 				0377B4FE18FB8447005C04C9 /* AppDelegate.m in Sources */,
 				0377B4F718FB8447005C04C9 /* main.m in Sources */,
 			);
