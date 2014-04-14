@@ -22,6 +22,7 @@
 		0377B52918FB98A0005C04C9 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52218FB98A0005C04C9 /* NSObject+Properties.m */; };
 		0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */; };
 		0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52718FB98A0005C04C9 /* MyCBLModel.m */; };
+		0377B5AB18FB9CAC005C04C9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B59418FB9B6D005C04C9 /* CouchbaseLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0377B5AB18FB9CAC005C04C9 /* CouchbaseLite.framework in Frameworks */,
 				0377B4EB18FB8447005C04C9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

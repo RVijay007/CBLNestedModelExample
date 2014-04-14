@@ -26,6 +26,8 @@ typedef void(^PrintError)(NSError*, NSString*);
             NSLog(@"Error %@: %@", msg, error);
         }
     };
+    
+    [self jsonEncodingTest];
 }
 
 /**
