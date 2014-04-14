@@ -22,7 +22,6 @@
 		0377B52918FB98A0005C04C9 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52218FB98A0005C04C9 /* NSObject+Properties.m */; };
 		0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */; };
 		0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52718FB98A0005C04C9 /* MyCBLModel.m */; };
-		0377B55518FB99E1005C04C9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B53E18FB99B3005C04C9 /* CouchbaseLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,86 +32,86 @@
 			remoteGlobalIDString = 0377B4E618FB8447005C04C9;
 			remoteInfo = CBLNestedModelExample;
 		};
-		0377B53D18FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59318FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 270B3DEA1489359000E0A926;
 			remoteInfo = "CBL Mac";
 		};
-		0377B53F18FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59518FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27B0B7E71492BB6B00A817AD;
 			remoteInfo = "CBL iOS";
 		};
-		0377B54118FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59718FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27B0B7A91492B83B00A817AD;
 			remoteInfo = "CBL iOS library";
 		};
-		0377B54318FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59918FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27C70694148864BA00F0F099;
 			remoteInfo = "CBL Mac Demo";
 		};
-		0377B54518FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59B18FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27B0B80B1492C16300A817AD;
 			remoteInfo = "Grocery Sync iOS Demo";
 		};
-		0377B54718FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59D18FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27731F2A1495CFEF00815D67;
 			remoteInfo = "CBL iOS Empty App";
 		};
-		0377B54918FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B59F18FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 275315D514ACF0A10065964D;
 			remoteInfo = "CBL Listener Mac";
 		};
-		0377B54B18FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B5A118FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DA147C3614BCAC3B0052DA4D;
 			remoteInfo = "CBL Listener iOS";
 		};
-		0377B54D18FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B5A318FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DA023B6414BCA94C008184BB;
 			remoteInfo = "Listener iOS Library";
 		};
-		0377B54F18FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B5A518FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 270FE0C814C5008C005FF647;
 			remoteInfo = LiteServ;
 		};
-		0377B55118FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B5A718FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27538F5017F13B03004C3BFD;
 			remoteInfo = "LiteServ App";
 		};
-		0377B55318FB99B3005C04C9 /* PBXContainerItemProxy */ = {
+		0377B5A918FB9B6D005C04C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+			containerPortal = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 792867BF178DE01900248AF0;
 			remoteInfo = CBLJSViewCompiler;
@@ -147,7 +146,7 @@
 		0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCBLChildModel.m; sourceTree = "<group>"; };
 		0377B52618FB98A0005C04C9 /* MyCBLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCBLModel.h; sourceTree = "<group>"; };
 		0377B52718FB98A0005C04C9 /* MyCBLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCBLModel.m; sourceTree = "<group>"; };
-		0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CouchbaseLite.xcodeproj; path = "../../../../Desktop/CBLNestedModelExample/vendor/couchbase-lite-ios/CouchbaseLite.xcodeproj"; sourceTree = "<group>"; };
+		0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CouchbaseLite.xcodeproj; path = "couchbase-lite-ios/CouchbaseLite.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0377B55518FB99E1005C04C9 /* CouchbaseLite.framework in Frameworks */,
 				0377B4EB18FB8447005C04C9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +173,7 @@
 		0377B4DE18FB8447005C04C9 = {
 			isa = PBXGroup;
 			children = (
-				0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */,
+				0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */,
 				0377B4F018FB8447005C04C9 /* CBLNestedModelExample */,
 				0377B50E18FB8447005C04C9 /* CBLNestedModelExampleTests */,
 				0377B4E918FB8447005C04C9 /* Frameworks */,
@@ -278,21 +276,21 @@
 			path = CBLJSONEncodingTests;
 			sourceTree = "<group>";
 		};
-		0377B52D18FB99B2005C04C9 /* Products */ = {
+		0377B58318FB9B6D005C04C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0377B53E18FB99B3005C04C9 /* CouchbaseLite.framework */,
-				0377B54018FB99B3005C04C9 /* CouchbaseLite.framework */,
-				0377B54218FB99B3005C04C9 /* libCouchbaseLite.a */,
-				0377B54418FB99B3005C04C9 /* Couchbase Lite Demo.app */,
-				0377B54618FB99B3005C04C9 /* Grocery Sync.app */,
-				0377B54818FB99B3005C04C9 /* Couchbase Lite Empty App.app */,
-				0377B54A18FB99B3005C04C9 /* CouchbaseLiteListener.framework */,
-				0377B54C18FB99B3005C04C9 /* CouchbaseLiteListener.framework */,
-				0377B54E18FB99B3005C04C9 /* libCouchbaseLiteListener.a */,
-				0377B55018FB99B3005C04C9 /* LiteServ */,
-				0377B55218FB99B3005C04C9 /* LiteServ.app */,
-				0377B55418FB99B3005C04C9 /* libCBLJSViewCompiler.a */,
+				0377B59418FB9B6D005C04C9 /* CouchbaseLite.framework */,
+				0377B59618FB9B6D005C04C9 /* CouchbaseLite.framework */,
+				0377B59818FB9B6D005C04C9 /* libCouchbaseLite.a */,
+				0377B59A18FB9B6D005C04C9 /* Couchbase Lite Demo.app */,
+				0377B59C18FB9B6D005C04C9 /* Grocery Sync.app */,
+				0377B59E18FB9B6D005C04C9 /* Couchbase Lite Empty App.app */,
+				0377B5A018FB9B6D005C04C9 /* CouchbaseLiteListener.framework */,
+				0377B5A218FB9B6D005C04C9 /* CouchbaseLiteListener.framework */,
+				0377B5A418FB9B6D005C04C9 /* libCouchbaseLiteListener.a */,
+				0377B5A618FB9B6D005C04C9 /* LiteServ */,
+				0377B5A818FB9B6D005C04C9 /* LiteServ.app */,
+				0377B5AA18FB9B6D005C04C9 /* libCBLJSViewCompiler.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,8 +360,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0377B52D18FB99B2005C04C9 /* Products */;
-					ProjectRef = 0377B52C18FB99B2005C04C9 /* CouchbaseLite.xcodeproj */;
+					ProductGroup = 0377B58318FB9B6D005C04C9 /* Products */;
+					ProjectRef = 0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -375,88 +373,88 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0377B53E18FB99B3005C04C9 /* CouchbaseLite.framework */ = {
+		0377B59418FB9B6D005C04C9 /* CouchbaseLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CouchbaseLite.framework;
-			remoteRef = 0377B53D18FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59318FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54018FB99B3005C04C9 /* CouchbaseLite.framework */ = {
+		0377B59618FB9B6D005C04C9 /* CouchbaseLite.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CouchbaseLite.framework;
-			remoteRef = 0377B53F18FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59518FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54218FB99B3005C04C9 /* libCouchbaseLite.a */ = {
+		0377B59818FB9B6D005C04C9 /* libCouchbaseLite.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCouchbaseLite.a;
-			remoteRef = 0377B54118FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59718FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54418FB99B3005C04C9 /* Couchbase Lite Demo.app */ = {
+		0377B59A18FB9B6D005C04C9 /* Couchbase Lite Demo.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Couchbase Lite Demo.app";
-			remoteRef = 0377B54318FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59918FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54618FB99B3005C04C9 /* Grocery Sync.app */ = {
+		0377B59C18FB9B6D005C04C9 /* Grocery Sync.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Grocery Sync.app";
-			remoteRef = 0377B54518FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59B18FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54818FB99B3005C04C9 /* Couchbase Lite Empty App.app */ = {
+		0377B59E18FB9B6D005C04C9 /* Couchbase Lite Empty App.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Couchbase Lite Empty App.app";
-			remoteRef = 0377B54718FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59D18FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54A18FB99B3005C04C9 /* CouchbaseLiteListener.framework */ = {
+		0377B5A018FB9B6D005C04C9 /* CouchbaseLiteListener.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CouchbaseLiteListener.framework;
-			remoteRef = 0377B54918FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B59F18FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54C18FB99B3005C04C9 /* CouchbaseLiteListener.framework */ = {
+		0377B5A218FB9B6D005C04C9 /* CouchbaseLiteListener.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CouchbaseLiteListener.framework;
-			remoteRef = 0377B54B18FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B5A118FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B54E18FB99B3005C04C9 /* libCouchbaseLiteListener.a */ = {
+		0377B5A418FB9B6D005C04C9 /* libCouchbaseLiteListener.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCouchbaseLiteListener.a;
-			remoteRef = 0377B54D18FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B5A318FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B55018FB99B3005C04C9 /* LiteServ */ = {
+		0377B5A618FB9B6D005C04C9 /* LiteServ */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = LiteServ;
-			remoteRef = 0377B54F18FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B5A518FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B55218FB99B3005C04C9 /* LiteServ.app */ = {
+		0377B5A818FB9B6D005C04C9 /* LiteServ.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = LiteServ.app;
-			remoteRef = 0377B55118FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B5A718FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0377B55418FB99B3005C04C9 /* libCBLJSViewCompiler.a */ = {
+		0377B5AA18FB9B6D005C04C9 /* libCBLJSViewCompiler.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCBLJSViewCompiler.a;
-			remoteRef = 0377B55318FB99B3005C04C9 /* PBXContainerItemProxy */;
+			remoteRef = 0377B5A918FB9B6D005C04C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
