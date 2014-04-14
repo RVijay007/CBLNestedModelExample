@@ -31,7 +31,7 @@ typedef void(^PrintError)(NSError*, NSString*);
 }
 
 /**
- * This test shows that changes to child models do not get saved to the parent cblmodel when they are initially created
+ * This test shows that changes to child models do not get saved to the parent CBLModel when they are initially created
  */
 - (void)jsonEncodingTest {
     // Create Database
@@ -58,22 +58,33 @@ typedef void(^PrintError)(NSError*, NSString*);
     [parentModel save:&error];
     self.printError(error, @"saving after setting another model as relationship to parent");
     
-    // Creates a child model
+    /**
+     * Test 1: Create a child model, assign it to the parent model, save, and then make changes to the child model
+     * with the same object. See if the name changes in the database on the second save.
+     * 
+     * This test FAILS.
+     */
     MyCBLChildModel* childModel = [[MyCBLChildModel alloc] init];
-    parentModel.childModel = childModel;
+    parentModel.firstChild = childModel;
     [parentModel save:&error];
     
-    // Changes data - check to see if it is saved
-    // Doesn't work
+    childModel.name = @"John Doe";              // Continue to use the same pointer as we first created
+    childModel.onMutate();
+    [parentModel save:&error];
+    
+    /**
+     * Test 2: Create a child model, assign it to the parent model, save, and then make changes to the child model
+     * with the same object. See if the name changes in the database on the second save.
+     *
+     * This test SUCCEEDS!
+     */
+    childModel = [[MyCBLChildModel alloc] init];
+    parentModel.secondChild = childModel;
+    [parentModel save:&error];
+    
+    childModel = parentModel.secondChild;       // Refresh the ptr to the parent's child
     childModel.name = @"Jane Doe";
-    if(childModel.onMutate)
-        childModel.onMutate();
-    [parentModel save:&error];
-    
-    parentModel.childModel.name = @"Jane Doe";
-    if(parentModel.childModel.onMutate) {
-        parentModel.childModel.onMutate();
-    }
+    childModel.onMutate();
     [parentModel save:&error];
 }
 

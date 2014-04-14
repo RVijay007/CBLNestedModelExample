@@ -32,7 +32,8 @@
 @property (strong, nonatomic) NSArray* childModels;
 
 // Objects
-@property (strong, nonatomic) CBLModel* model;
-@property (strong, nonatomic) MyCBLChildModel* childModel;
+@property (weak, nonatomic) CBLModel* model;
+@property (strong, nonatomic) MyCBLChildModel* firstChild;
+@property (strong, nonatomic) MyCBLChildModel* secondChild;
 
 @end

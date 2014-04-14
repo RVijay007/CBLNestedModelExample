@@ -13,7 +13,7 @@
 - (id)init {
     self = [super init];
     if(self) {
-        self.name = @"John Doe";
+        self.name = @"";
     }
     
     return self;

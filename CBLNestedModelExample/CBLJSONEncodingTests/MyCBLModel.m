@@ -9,7 +9,7 @@
 #import "MyCBLModel.h"
 
 @implementation MyCBLModel
-@dynamic integerValue, intValue, floatValue, doubleValue, boolValue, uintegerValue, string, date, number, null, data, decimal, models, model, childModel, childModels;
+@dynamic integerValue, intValue, floatValue, doubleValue, boolValue, uintegerValue, string, date, number, null, data, decimal, models, childModels, model, firstChild, secondChild;
 
 - (instancetype)initWithNewDocumentInDatabase:(CBLDatabase*)database {
     self = [super initWithNewDocumentInDatabase:database];
@@ -32,7 +32,8 @@
         self.childModels = @[];
         
         self.model = nil;
-        self.childModel = nil;
+        self.firstChild = nil;
+        self.secondChild = nil;
     }
     
     return self;
