@@ -90,6 +90,26 @@ typedef void(^PrintError)(NSError*, NSString*);
     [parentModel save:&error];
 }
 
+/**
+ * The goal of this is to illustrate the power of CBLNestedModels by creating a document whose JSON output would be the following. This is the template for a configuration script for the couchbase sync-gateway.
+ 
+ {
+ "my-sync-db": {
+    "users": {
+        "GUEST": {
+            "admin_channels": [
+            "public"
+            ],
+            "disabled": false
+        }
+    },
+    "bucket": "my-remote-bucket",
+    "server": "http://localhost:8091",
+    "sync": "function(doc) {channel(doc.channels);}"
+    }
+ }
+ */
+
 - (void)nestedModelTest {
     // Create Database
     NSError* error;
