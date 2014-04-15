@@ -18,6 +18,7 @@
 @end
 
 @implementation SyncGatewayDatabase
+// Automatically @synthesizes all properties. Do not use @dynamic with CBLNestedModel
 
 + (Class)usersItemClass {
     return [SyncGatewayUserInfo class];
@@ -26,5 +27,6 @@
 @end
 
 @implementation SyncGatewayUserInfo
+// Automatically @synthesizes all properties. Do not use @dynamic with CBLNestedModel
 
 @end
