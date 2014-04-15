@@ -8,7 +8,7 @@ This is an example project for using Nested JSON Objects in CBLModels for the Co
     "users": {
         "GUEST": {
             "admin_channels": [
-            "public"
+              "public"
             ],
             "disabled": false
         }
