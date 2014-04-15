@@ -33,7 +33,7 @@ The AppDelegate provides 2 methods for testing. You can enable / disable these t
 
 **nestedModelTest** - Produces a nested model of classes that will save to a single document in the Couchbase-Lite NoSQL store. It produces the JSON output above. 
 
-Run the app, and once the window appears you can close the app. Locate the cblite database in ~/Library/Application Support/com.rvijay007.CBLNestedModelExample and open it in the CouchbaseLite View app to see the documents within. You can breakpoint at various lines within the nestedModelTest and check out the cblite database to see changes as they are being made.
+Run the app, and once the window appears you can close the app. Locate the ```.cblite``` database in ~/Library/Application Support/com.rvijay007.CBLNestedModelExample and open it in the CouchbaseLite View app to see the documents within. You can breakpoint at various lines within the nestedModelTest and check out the cblite database to see changes as they are being made.
 
 ### License
 
