@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CBLModel" representedClassName="" isAbstract="YES" syncable="YES"/>
+    <entity name="CBLNestedModel" representedClassName="" isAbstract="YES" syncable="YES"/>
+    <entity name="SyncGatewayDatabase" parentEntity="CBLNestedModel" syncable="YES">
+        <attribute name="bucket" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="server" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sync" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SyncGatewayUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="SyncGatewayModel" parentEntity="CBLModel" syncable="YES">
+        <attribute name="adminInterface" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="interface" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="log" optional="YES" attributeType="Transformable" valueTransformerName="NSArray" syncable="YES"/>
+        <relationship name="databases" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SyncGatewayDatabase" syncable="YES"/>
+    </entity>
+    <entity name="SyncGatewayUserInfo" parentEntity="CBLNestedModel" syncable="YES">
+        <attribute name="admin_channels" optional="YES" attributeType="Transformable" valueTransformerName="NSArray" syncable="YES"/>
+        <attribute name="disabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CBLModel" positionX="-243" positionY="-252" width="128" height="43"/>
+        <element name="CBLNestedModel" positionX="-90" positionY="-252" width="128" height="43"/>
+        <element name="SyncGatewayModel" positionX="-387" positionY="-166" width="128" height="103"/>
+        <element name="SyncGatewayDatabase" positionX="-180" positionY="-162" width="128" height="103"/>
+        <element name="SyncGatewayUserInfo" positionX="7" positionY="-162" width="128" height="73"/>
+    </elements>
+</model>

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0307B17F18FC1D4300B69621 /* SyncGatewayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0307B17E18FC1D4300B69621 /* SyncGatewayModel.m */; };
-		03508E8018FD9EEF000CA640 /* CBLNestedModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03508E7E18FD9EEF000CA640 /* CBLNestedModel.xcdatamodeld */; };
+		03718C96190047DA000D50DC /* SyncGatewayDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03718C8F190047DA000D50DC /* SyncGatewayDatabase.m */; };
+		03718C97190047DA000D50DC /* SyncGatewayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03718C91190047DA000D50DC /* SyncGatewayModel.m */; };
+		03718C98190047DA000D50DC /* SyncGatewayUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03718C93190047DA000D50DC /* SyncGatewayUserInfo.m */; };
 		0377B4EB18FB8447005C04C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B4EA18FB8447005C04C9 /* Cocoa.framework */; };
 		0377B4F518FB8447005C04C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0377B4F318FB8447005C04C9 /* InfoPlist.strings */; };
 		0377B4F718FB8447005C04C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B4F618FB8447005C04C9 /* main.m */; };
@@ -120,10 +121,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0307B17D18FC1D4300B69621 /* SyncGatewayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayModel.h; sourceTree = "<group>"; };
-		0307B17E18FC1D4300B69621 /* SyncGatewayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayModel.m; sourceTree = "<group>"; };
-		03508E7F18FD9EEF000CA640 /* CBLNestedModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CBLNestedModel.xcdatamodel; sourceTree = "<group>"; };
-		0357B85F18FEFE9F009EA464 /* CBLNestedModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CBLNestedModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		03718C8D190047DA000D50DC /* SyncGateway.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyncGateway.xcdatamodel; sourceTree = "<group>"; };
+		03718C8E190047DA000D50DC /* SyncGatewayDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayDatabase.h; sourceTree = "<group>"; };
+		03718C8F190047DA000D50DC /* SyncGatewayDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayDatabase.m; sourceTree = "<group>"; };
+		03718C90190047DA000D50DC /* SyncGatewayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayModel.h; sourceTree = "<group>"; };
+		03718C91190047DA000D50DC /* SyncGatewayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayModel.m; sourceTree = "<group>"; };
+		03718C92190047DA000D50DC /* SyncGatewayUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayUserInfo.h; sourceTree = "<group>"; };
+		03718C93190047DA000D50DC /* SyncGatewayUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayUserInfo.m; sourceTree = "<group>"; };
 		0377B4E718FB8447005C04C9 /* CBLNestedModelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLNestedModelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0377B4EA18FB8447005C04C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0377B4ED18FB8447005C04C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -172,11 +176,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0307B16818FBB87B00B69621 /* CBLNestedModelTests */ = {
+		03718C89190047DA000D50DC /* CBLNestedModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				0307B17D18FC1D4300B69621 /* SyncGatewayModel.h */,
-				0307B17E18FC1D4300B69621 /* SyncGatewayModel.m */,
+				03718C8C190047DA000D50DC /* SyncGateway.xcdatamodeld */,
+				03718C8E190047DA000D50DC /* SyncGatewayDatabase.h */,
+				03718C8F190047DA000D50DC /* SyncGatewayDatabase.m */,
+				03718C90190047DA000D50DC /* SyncGatewayModel.h */,
+				03718C91190047DA000D50DC /* SyncGatewayModel.m */,
+				03718C92190047DA000D50DC /* SyncGatewayUserInfo.h */,
+				03718C93190047DA000D50DC /* SyncGatewayUserInfo.m */,
 			);
 			path = CBLNestedModelTests;
 			sourceTree = "<group>";
@@ -225,13 +234,12 @@
 			isa = PBXGroup;
 			children = (
 				0377B52318FB98A0005C04C9 /* CBLJSONEncodingTests */,
-				0307B16818FBB87B00B69621 /* CBLNestedModelTests */,
+				03718C89190047DA000D50DC /* CBLNestedModelTests */,
 				0377B4FC18FB8447005C04C9 /* AppDelegate.h */,
 				0377B4FD18FB8447005C04C9 /* AppDelegate.m */,
 				0377B4FF18FB8447005C04C9 /* MainMenu.xib */,
 				0377B50218FB8447005C04C9 /* Images.xcassets */,
 				0377B4F118FB8447005C04C9 /* Supporting Files */,
-				03508E7E18FD9EEF000CA640 /* CBLNestedModel.xcdatamodeld */,
 			);
 			path = CBLNestedModelExample;
 			sourceTree = "<group>";
@@ -488,10 +496,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */,
+				03718C96190047DA000D50DC /* SyncGatewayDatabase.m in Sources */,
+				03718C98190047DA000D50DC /* SyncGatewayUserInfo.m in Sources */,
 				0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */,
-				0307B17F18FC1D4300B69621 /* SyncGatewayModel.m in Sources */,
+				03718C97190047DA000D50DC /* SyncGatewayModel.m in Sources */,
 				0377B4FE18FB8447005C04C9 /* AppDelegate.m in Sources */,
-				03508E8018FD9EEF000CA640 /* CBLNestedModel.xcdatamodeld in Sources */,
 				0377B4F718FB8447005C04C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +592,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -616,6 +626,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -628,6 +639,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBLNestedModelExample/CBLNestedModelExample-Prefix.pch";
 				INFOPLIST_FILE = "CBLNestedModelExample/CBLNestedModelExample-Info.plist";
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -641,6 +653,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CBLNestedModelExample/CBLNestedModelExample-Prefix.pch";
 				INFOPLIST_FILE = "CBLNestedModelExample/CBLNestedModelExample-Info.plist";
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -719,14 +732,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		03508E7E18FD9EEF000CA640 /* CBLNestedModel.xcdatamodeld */ = {
+		03718C8C190047DA000D50DC /* SyncGateway.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0357B85F18FEFE9F009EA464 /* CBLNestedModel 2.xcdatamodel */,
-				03508E7F18FD9EEF000CA640 /* CBLNestedModel.xcdatamodel */,
+				03718C8D190047DA000D50DC /* SyncGateway.xcdatamodel */,
 			);
-			currentVersion = 03508E7F18FD9EEF000CA640 /* CBLNestedModel.xcdatamodel */;
-			path = CBLNestedModel.xcdatamodeld;
+			currentVersion = 03718C8D190047DA000D50DC /* SyncGateway.xcdatamodel */;
+			path = SyncGateway.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
