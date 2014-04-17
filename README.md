@@ -4,18 +4,34 @@ This is an example project for using Nested JSON Objects in CBLModels for the Co
 
 ```
  {
- "my-sync-db": {
-    "users": {
-        "GUEST": {
-            "admin_channels": [
-              "public"
-            ],
-            "disabled": false
+    "interface": ":4984",
+    "adminInterface": "127.0.0.1:4985",
+    "log": [
+        "CRUD",
+        "CRUD+",
+        "HTTP",
+        "HTTP+",
+        "Access",
+        "Cache",
+        "Shadow",
+        "Shadow+",
+        "Changes",
+        "Changes+"
+    ],
+    "databases": {
+    "my-sync-db": {
+        "users": {
+            "GUEST": {
+                "admin_channels": [
+                    "public"
+                ],
+                "disabled": false
+            }
+        },
+        "bucket": "my-remote-bucket",
+        "server": "http://localhost:8091",
+        "sync": "function(doc) {channel(doc.channels);}"
         }
-    },
-    "bucket": "my-remote-bucket",
-    "server": "http://localhost:8091",
-    "sync": "function(doc) {channel(doc.channels);}"
     }
  }
 ```
