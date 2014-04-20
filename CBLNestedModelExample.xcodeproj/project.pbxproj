@@ -19,8 +19,6 @@
 		0377B50318FB8447005C04C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0377B50218FB8447005C04C9 /* Images.xcassets */; };
 		0377B50A18FB8447005C04C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B50918FB8447005C04C9 /* XCTest.framework */; };
 		0377B50B18FB8447005C04C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B4EA18FB8447005C04C9 /* Cocoa.framework */; };
-		0377B51318FB8447005C04C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0377B51118FB8447005C04C9 /* InfoPlist.strings */; };
-		0377B51518FB8447005C04C9 /* CBLNestedModelExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B51418FB8447005C04C9 /* CBLNestedModelExampleTests.m */; };
 		0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */; };
 		0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52718FB98A0005C04C9 /* MyCBLModel.m */; };
 		0377B5AB18FB9CAC005C04C9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B59418FB9B6D005C04C9 /* CouchbaseLite.framework */; };
@@ -144,9 +142,6 @@
 		0377B50218FB8447005C04C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0377B50818FB8447005C04C9 /* CBLNestedModelExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBLNestedModelExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0377B50918FB8447005C04C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0377B51018FB8447005C04C9 /* CBLNestedModelExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBLNestedModelExampleTests-Info.plist"; sourceTree = "<group>"; };
-		0377B51218FB8447005C04C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0377B51418FB8447005C04C9 /* CBLNestedModelExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBLNestedModelExampleTests.m; sourceTree = "<group>"; };
 		0377B52418FB98A0005C04C9 /* MyCBLChildModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCBLChildModel.h; sourceTree = "<group>"; };
 		0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCBLChildModel.m; sourceTree = "<group>"; };
 		0377B52618FB98A0005C04C9 /* MyCBLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCBLModel.h; sourceTree = "<group>"; };
@@ -195,7 +190,6 @@
 			children = (
 				0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */,
 				0377B4F018FB8447005C04C9 /* CBLNestedModelExample */,
-				0377B50E18FB8447005C04C9 /* CBLNestedModelExampleTests */,
 				0377B4E918FB8447005C04C9 /* Frameworks */,
 				0377B4E818FB8447005C04C9 /* Products */,
 			);
@@ -252,24 +246,6 @@
 				0377B4F618FB8447005C04C9 /* main.m */,
 				0377B4F818FB8447005C04C9 /* CBLNestedModelExample-Prefix.pch */,
 				0377B4F918FB8447005C04C9 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0377B50E18FB8447005C04C9 /* CBLNestedModelExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				0377B51418FB8447005C04C9 /* CBLNestedModelExampleTests.m */,
-				0377B50F18FB8447005C04C9 /* Supporting Files */,
-			);
-			path = CBLNestedModelExampleTests;
-			sourceTree = "<group>";
-		};
-		0377B50F18FB8447005C04C9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0377B51018FB8447005C04C9 /* CBLNestedModelExampleTests-Info.plist */,
-				0377B51118FB8447005C04C9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -484,7 +460,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0377B51318FB8447005C04C9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +484,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0377B51518FB8447005C04C9 /* CBLNestedModelExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,14 +520,6 @@
 				0377B50018FB8447005C04C9 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		0377B51118FB8447005C04C9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0377B51218FB8447005C04C9 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
