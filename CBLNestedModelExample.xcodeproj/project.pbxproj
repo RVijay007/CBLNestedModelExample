@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03718C96190047DA000D50DC /* SyncGatewayDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03718C8F190047DA000D50DC /* SyncGatewayDatabase.m */; };
-		03718C97190047DA000D50DC /* SyncGatewayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03718C91190047DA000D50DC /* SyncGatewayModel.m */; };
-		03718C98190047DA000D50DC /* SyncGatewayUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03718C93190047DA000D50DC /* SyncGatewayUserInfo.m */; };
 		0377B4EB18FB8447005C04C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B4EA18FB8447005C04C9 /* Cocoa.framework */; };
 		0377B4F518FB8447005C04C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0377B4F318FB8447005C04C9 /* InfoPlist.strings */; };
 		0377B4F718FB8447005C04C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B4F618FB8447005C04C9 /* main.m */; };
@@ -22,6 +19,10 @@
 		0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52518FB98A0005C04C9 /* MyCBLChildModel.m */; };
 		0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0377B52718FB98A0005C04C9 /* MyCBLModel.m */; };
 		0377B5AB18FB9CAC005C04C9 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0377B59418FB9B6D005C04C9 /* CouchbaseLite.framework */; };
+		038D0C081914164000B36797 /* SyncGatewayDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 038D0C011914164000B36797 /* SyncGatewayDatabase.m */; };
+		038D0C091914164000B36797 /* SyncGatewayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 038D0C031914164000B36797 /* SyncGatewayModel.m */; };
+		038D0C0A1914164000B36797 /* SyncGatewayModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 038D0C051914164000B36797 /* SyncGatewayModelFactory.m */; };
+		038D0C0B1914164000B36797 /* SyncGatewayUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 038D0C071914164000B36797 /* SyncGatewayUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,12 +121,6 @@
 
 /* Begin PBXFileReference section */
 		03718C8D190047DA000D50DC /* SyncGateway.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyncGateway.xcdatamodel; sourceTree = "<group>"; };
-		03718C8E190047DA000D50DC /* SyncGatewayDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayDatabase.h; sourceTree = "<group>"; };
-		03718C8F190047DA000D50DC /* SyncGatewayDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayDatabase.m; sourceTree = "<group>"; };
-		03718C90190047DA000D50DC /* SyncGatewayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayModel.h; sourceTree = "<group>"; };
-		03718C91190047DA000D50DC /* SyncGatewayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayModel.m; sourceTree = "<group>"; };
-		03718C92190047DA000D50DC /* SyncGatewayUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayUserInfo.h; sourceTree = "<group>"; };
-		03718C93190047DA000D50DC /* SyncGatewayUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayUserInfo.m; sourceTree = "<group>"; };
 		0377B4E718FB8447005C04C9 /* CBLNestedModelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLNestedModelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0377B4EA18FB8447005C04C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0377B4ED18FB8447005C04C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -147,6 +142,14 @@
 		0377B52618FB98A0005C04C9 /* MyCBLModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCBLModel.h; sourceTree = "<group>"; };
 		0377B52718FB98A0005C04C9 /* MyCBLModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCBLModel.m; sourceTree = "<group>"; };
 		0377B58218FB9B6D005C04C9 /* CouchbaseLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CouchbaseLite.xcodeproj; path = "couchbase-lite-ios/CouchbaseLite.xcodeproj"; sourceTree = "<group>"; };
+		038D0C001914164000B36797 /* SyncGatewayDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayDatabase.h; sourceTree = "<group>"; };
+		038D0C011914164000B36797 /* SyncGatewayDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayDatabase.m; sourceTree = "<group>"; };
+		038D0C021914164000B36797 /* SyncGatewayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayModel.h; sourceTree = "<group>"; };
+		038D0C031914164000B36797 /* SyncGatewayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayModel.m; sourceTree = "<group>"; };
+		038D0C041914164000B36797 /* SyncGatewayModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayModelFactory.h; sourceTree = "<group>"; };
+		038D0C051914164000B36797 /* SyncGatewayModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayModelFactory.m; sourceTree = "<group>"; };
+		038D0C061914164000B36797 /* SyncGatewayUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncGatewayUserInfo.h; sourceTree = "<group>"; };
+		038D0C071914164000B36797 /* SyncGatewayUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncGatewayUserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,13 +177,8 @@
 		03718C89190047DA000D50DC /* CBLNestedModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				038D0BFF1914164000B36797 /* generated */,
 				03718C8C190047DA000D50DC /* SyncGateway.xcdatamodeld */,
-				03718C8E190047DA000D50DC /* SyncGatewayDatabase.h */,
-				03718C8F190047DA000D50DC /* SyncGatewayDatabase.m */,
-				03718C90190047DA000D50DC /* SyncGatewayModel.h */,
-				03718C91190047DA000D50DC /* SyncGatewayModel.m */,
-				03718C92190047DA000D50DC /* SyncGatewayUserInfo.h */,
-				03718C93190047DA000D50DC /* SyncGatewayUserInfo.m */,
 			);
 			path = CBLNestedModelTests;
 			sourceTree = "<group>";
@@ -278,6 +276,21 @@
 				0377B5AA18FB9B6D005C04C9 /* libCBLJSViewCompiler.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		038D0BFF1914164000B36797 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				038D0C001914164000B36797 /* SyncGatewayDatabase.h */,
+				038D0C011914164000B36797 /* SyncGatewayDatabase.m */,
+				038D0C021914164000B36797 /* SyncGatewayModel.h */,
+				038D0C031914164000B36797 /* SyncGatewayModel.m */,
+				038D0C041914164000B36797 /* SyncGatewayModelFactory.h */,
+				038D0C051914164000B36797 /* SyncGatewayModelFactory.m */,
+				038D0C061914164000B36797 /* SyncGatewayUserInfo.h */,
+				038D0C071914164000B36797 /* SyncGatewayUserInfo.m */,
+			);
+			path = generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,12 +484,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0377B52B18FB98A0005C04C9 /* MyCBLModel.m in Sources */,
-				03718C96190047DA000D50DC /* SyncGatewayDatabase.m in Sources */,
-				03718C98190047DA000D50DC /* SyncGatewayUserInfo.m in Sources */,
 				0377B52A18FB98A0005C04C9 /* MyCBLChildModel.m in Sources */,
-				03718C97190047DA000D50DC /* SyncGatewayModel.m in Sources */,
+				038D0C0B1914164000B36797 /* SyncGatewayUserInfo.m in Sources */,
+				038D0C081914164000B36797 /* SyncGatewayDatabase.m in Sources */,
+				038D0C091914164000B36797 /* SyncGatewayModel.m in Sources */,
 				0377B4FE18FB8447005C04C9 /* AppDelegate.m in Sources */,
 				0377B4F718FB8447005C04C9 /* main.m in Sources */,
+				038D0C0A1914164000B36797 /* SyncGatewayModelFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

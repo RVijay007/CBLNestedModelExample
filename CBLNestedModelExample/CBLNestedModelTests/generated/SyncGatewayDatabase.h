@@ -7,9 +7,9 @@
 #import "SyncGatewayUserInfo.h"
 
 @interface SyncGatewayDatabase : CBLNestedModel
-@property (nonatomic, copy) NSString* bucket;
-@property (nonatomic, copy) NSString* server;
-@property (nonatomic, copy) NSString* sync;
+@property (nonatomic, strong) NSString* bucket;
+@property (nonatomic, strong) NSString* server;
+@property (nonatomic, strong) NSString* sync;
 @property (nonatomic, strong) NSDictionary* users;
 
 @end
